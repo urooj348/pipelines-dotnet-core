@@ -25,3 +25,7 @@ steps:
   inputs:
     command: 'test'
     projects: '**/*.csproj'
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: true
